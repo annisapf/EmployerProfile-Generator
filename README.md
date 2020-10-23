@@ -36,15 +36,14 @@ As a manager, I want to generate a webpage that displays my team's basic info, s
 
 ## Screenshots
 
-![Screen Shot 2020-10-16 at 16 38 34]()
-![Screen Shot 2020-10-16 at 16 35 41]()
-    
+![My-Team](https://user-images.githubusercontent.com/7066137/96955975-ab3f2880-1542-11eb-97f6-c8d8bb7bd73f.png)
+  
    
 ## Installation
     
 This project uses 2 npm packages: 
-* [axios](https://www.npmjs.com/package/axios)
 * [inquirer](https://www.npmjs.com/package/inquirer)
+* [pdf-kit] ()
 To install necessary dependencies, run the following command:
     
 ```
@@ -52,15 +51,15 @@ npm i
 ```
 
 ```
-npm install html-pdf
+npm install pdf-kit
 ```
     
 ## Usage
     
-To run tests, run the following command:
+To use the app, run the following command:
     
 ```
-node index.js
+node app.js
 ```
 
 
@@ -75,9 +74,11 @@ It is an open project and everyone can contribute - please send and email reques
     
 ## Tests
     
-There is no testing required
-
-
+To run tests, run the following command:
+    
+```
+npm run test
+```
     
 ## Questions
     
