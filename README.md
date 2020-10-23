@@ -43,7 +43,7 @@ As a manager, I want to generate a webpage that displays my team's basic info, s
     
 This project uses 2 npm packages: 
 * [inquirer](https://www.npmjs.com/package/inquirer)
-* [pdf-kit] ()
+* [html-pdf] (https://www.npmjs.com/package/html-pdf)
 To install necessary dependencies, run the following command:
     
 ```
@@ -51,7 +51,7 @@ npm i
 ```
 
 ```
-npm install pdf-kit
+npm install html-pdf
 ```
     
 ## Usage
