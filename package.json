@@ -23,7 +23,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "html-pdf": "^2.2.0",
-    "inquirer": "^7.3.3"
+    "inquirer": "^7.3.3",
+    "puppeteer": "^5.4.0"
   },
   "devDependencies": {
     "jest": "^26.6.0"

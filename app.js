@@ -7,13 +7,6 @@ const path = require("path");
 const fs = require("fs");
 const pdf = require('html-pdf');
 
-const html = fs.readFileSync('./team.html', 'utf8');
-const options = { format: 'A3' };
-
-pdf.create(html, options).toFile('./team.pdf', function (err, res) {
-    if (err) return console.log(err);
-    console.log(res);
-});
 
 const OUTPUT_DIR = path.resolve(__dirname, "output")
 const outputPath = path.join(OUTPUT_DIR, "team.html");
@@ -40,6 +33,8 @@ const validatePhoneNumber = (id) => {
     const reg = /^\d+$/;
     return reg.test(id) || "Phone Number should be a number!";
 }
+
+
 
 console.log('Please build your team: ')
 const userInput = () => {
@@ -91,10 +86,19 @@ const userInput = () => {
             internAnswer()
         }
         else {
-            fs.writeFile("team.html", render(employeesArr), function (err) {
+            fs.writeFileSync("team.html", render(employeesArr), function (err) {
                 if (err) throw err
                 console.log("Only the Manager is listed.")
             })
+
+            const html = fs.readFileSync('./team.html', 'utf8');
+            const options = { format: 'A3' };
+
+            pdf.create(html, options).toFile('./team.pdf', function (err, res) {
+                if (err) return console.log(err);
+                console.log(res);
+            });
+
         }
     });
 };
@@ -117,12 +121,24 @@ function resume() {
             internAnswer()
         }
         else {
-            fs.writeFile("team.html", render(employeesArr), function (err) {
+            fs.writeFileSync("team.html", render(employeesArr), function (err) {
 
-                if (err) throw err
+                if (err) throw err; {
 
-                console.log("Your Html has been rendered, please look for the team.html file.");
+                    console.log("Your Html has been rendered, please look for the team.html file.");
+                }
+
+
             })
+
+            const html = fs.readFileSync('./team.html', 'utf8');
+            const options = { format: 'A3' };
+
+            pdf.create(html, options).toFile('./team.pdf', function (err, res) {
+                if (err) return console.log(err);
+                console.log(res);
+            });
+
         }
     })
 }
@@ -202,4 +218,10 @@ const engineerAnswer = () => {
 }
 
 
+
 userInput();
+
+
+
+
+
