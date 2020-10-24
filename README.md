@@ -31,19 +31,31 @@
 As a manager, I want to generate a webpage that displays my team's basic info, so that I have quick access to emails and GitHub profiles.
 
 ## Demo Video
-    
-![Demo Good ReadMe Generator]()
+
+Node App.js
+![Demo Employer Profile Generator](https://j.gifs.com/K1n45r.gif)
+
+Run Testing    
+![Demo NPM Run Test](https://j.gifs.com/8154Xl.gif)
+
 
 ## Screenshots
 
+team.tml
 ![My-Team](https://user-images.githubusercontent.com/7066137/96955975-ab3f2880-1542-11eb-97f6-c8d8bb7bd73f.png)
-  
+
+node app.js  
+![Screen Shot 2020-10-24 at 19 28 59](https://user-images.githubusercontent.com/7066137/97077496-f1be8100-162f-11eb-84bf-79e6489b24cf.png)
+
+npm run test
+![Screen Shot 2020-10-24 at 19 35 21](https://user-images.githubusercontent.com/7066137/97077511-1c103e80-1630-11eb-99d7-9761cd16a9da.png)
+
    
 ## Installation
     
 This project uses 2 npm packages: 
 * [inquirer](https://www.npmjs.com/package/inquirer)
-* [html-pdf] (https://www.npmjs.com/package/html-pdf)
+* [html-pdf](https://www.npmjs.com/package/html-pdf)
 To install necessary dependencies, run the following command:
     
 ```
